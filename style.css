@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+:root {
+  --accent-color: orangered;
+}
+* {
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(161, 206, 255);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #131a21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+main {
+  width: 768px;
+  background-color: #0d1115;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px black;
+}
+
+.titlebar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 5px;
+  background-color: #1f2932;
+}
+.titlebar button {
+  border: 0px;
+  border-radius: 33px;
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+}
+#minimize-btn {
+  background-color: greenyellow;
+}
+#maximize-btn {
+  background-color: rgb(248, 177, 46);
+}
+#close-btn {
+  background-color: rgb(233, 43, 43);
+}
+pre,
+pre > * {
+  white-space: pre;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+}
+#animated {
+  animation: showandhide 300ms infinite alternate-reverse ease-in-out;
+}
+@keyframes showandhide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
