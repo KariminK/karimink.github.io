@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @font-face {
   font-family: "Anderson Grotesk";
   src: url("./fonts/AndersonGrotesk-Bold.otf");
@@ -18,7 +19,7 @@
 }
 
 :root {
-  --accent-color: #5e5e5e;
+  --accent-color: #3a3a3a;
 }
 body {
   padding: 0px 30px;
@@ -35,12 +36,14 @@ header {
   padding: 1em;
 }
 header p {
+  font-family: "Inter", sans-serif;
   color: rgb(179, 179, 179);
   line-height: 1.75em;
   font-size: 18px;
   font-weight: lighter;
 }
 header h2 {
+  font-family: "Inter", sans-serif;
   font-size: 42px;
   color: var(--accent-color);
   font-weight: lighter;
@@ -83,4 +86,24 @@ main p {
     font-size: 15rem;
     letter-spacing: -10px;
   }
+}
+
+#links {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+  border-top: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  padding: 10px 0px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+#links a {
+  border: 1px solid var(--accent-color);
+  border-radius: 33px;
+  font-size: 3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  flex: 1 0 400px;
+  text-align: center;
 }
