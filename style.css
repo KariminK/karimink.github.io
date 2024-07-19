@@ -19,7 +19,7 @@
 }
 
 :root {
-  --accent-color: #3a3a3a;
+  --accent-color: #424242;
 }
 body {
   padding: 0px 30px;
@@ -84,7 +84,8 @@ main p {
   font-size: 3rem;
   font-weight: normal;
   text-transform: uppercase;
-  flex: 1 0 400px;
+  flex: 1 0 200px;
+  text-decoration: none;
   text-align: center;
 }
 
@@ -109,6 +110,18 @@ main p {
   width: 100%;
   border-radius: 33px;
 }
+#projects h3 {
+  font-size: 4rem;
+}
+#projects p {
+  font-size: 1.3rem;
+  color: var(--accent-color);
+}
+#projects a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 20px;
+}
 
 @media screen and (max-width: 724px) {
   main {
@@ -116,7 +129,7 @@ main p {
   }
   main h1 {
     text-align: left;
-    font-size: 320px;
+    font-size: 20rem;
     line-height: 0.8;
   }
   #projects ul {
@@ -124,11 +137,16 @@ main p {
   }
 }
 @media screen and (max-width: 500px) {
+  :root {
+    font-size: 12px;
+  }
+  body {
+    padding: 0px 10px;
+  }
   main {
     padding-top: 100px;
   }
   main h1 {
-    font-size: 15rem;
     letter-spacing: -10px;
   }
 }
