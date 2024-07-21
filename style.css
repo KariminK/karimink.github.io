@@ -19,14 +19,13 @@
 }
 
 :root {
-  --accent-color: #424242;
+  --accent-color: #2e2e2e;
 }
 body {
   padding: 0px 30px;
   min-height: 100vh;
 }
 header {
-  padding: 10px;
   border-bottom: 2px solid var(--accent-color);
   display: flex;
   justify-content: space-between;
@@ -34,6 +33,7 @@ header {
   position: sticky;
   top: 0px;
   padding: 1em;
+  z-index: 4;
 }
 header p {
   font-family: "Inter", sans-serif;
@@ -52,6 +52,7 @@ main {
   padding-top: 25vh;
   text-align: center;
 }
+
 main h1 {
   text-transform: uppercase;
   font-size: 25vw;
@@ -87,6 +88,8 @@ main p {
   flex: 1 0 200px;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
+  z-index: 3;
 }
 
 #projects h2 {
@@ -104,23 +107,35 @@ main p {
 
 #projects li {
   flex: 1 0 700px;
+  background-color: transparent;
+  z-index: 3;
 }
 
 #projects img {
   width: 100%;
   border-radius: 33px;
+  z-index: 0;
 }
 #projects h3 {
   font-size: 4rem;
+  background-color: transparent;
 }
 #projects p {
   font-size: 1.3rem;
   color: var(--accent-color);
+  background-color: transparent;
 }
 #projects a {
   display: inline-block;
   text-decoration: none;
   margin: 20px;
+}
+#canvas {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 @media screen and (max-width: 724px) {
