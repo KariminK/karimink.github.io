@@ -21,3 +21,14 @@ const drawParticle = (x, y, size, ctx) => {
 addEventListener("mousemove", (e) => {
   drawParticle(e.clientX, e.clientY, 10, ctx);
 });
+
+const discord = document.querySelector(".discord");
+const mail = document.querySelector(".mail");
+const linkClickHandler = (e) => {
+  e.target.classList.toggle("active");
+  if (e.target.classList.contains("active"))
+    e.target.classList.remove("unactive");
+  else e.target.classList.add("unactive");
+};
+discord.addEventListener("click", linkClickHandler);
+mail.addEventListener("click", linkClickHandler);
