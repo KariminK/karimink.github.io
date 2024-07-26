@@ -20,6 +20,7 @@
 
 :root {
   --accent-color: #2e2e2e;
+  --accent-color-lighter: #494949;
 }
 body {
   padding: 0px 30px;
@@ -109,6 +110,7 @@ main p {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   width: 100%;
   top: 0px;
   left: 100%;
@@ -180,8 +182,8 @@ main p {
   background-color: transparent;
 }
 #projects p {
-  font-size: 1.3rem;
-  color: var(--accent-color);
+  font-size: 2rem;
+  color: var(--accent-color-lighter);
   background-color: transparent;
 }
 #projects a {
