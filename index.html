@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karimin</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -26,14 +27,21 @@
       </p>
     </main>
     <section id="links">
-      <a class="link" href="https://www.github.com/KariminK">Github</a>
-      <a class="link discord"> Discord </a>
-      <a class="link mail">Mail</a>
+      <a
+        data-aos="fade-down"
+        class="link"
+        href="https://www.github.com/KariminK"
+        >Github</a
+      >
+      <a data-aos="fade-down" data-aos-delay="250" class="link discord">
+        Discord
+      </a>
+      <a data-aos="fade-down" data-aos-delay="500" class="link mail">Mail</a>
     </section>
     <section id="projects">
-      <h2>Featured Projects</h2>
+      <h2 data-aos="fade-right">Featured Projects</h2>
       <ul>
-        <li>
+        <li data-aos="fade-right">
           <img src="./assets/stuff.png" alt="stuff project" />
           <h3>$tuff eShop</h3>
           <p>
@@ -45,7 +53,7 @@
           <a href="https://karimink.github.io/shopping-cart/">Preview</a>
           <a href="https://github.com/KariminK/shopping-cart">Source code</a>
         </li>
-        <li>
+        <li data-aos="fade-right">
           <img src="./assets/zstplusplus.png" alt="zstplusplus project" />
           <h3>ZSTPlusPlus</h3>
           <p>
@@ -57,7 +65,7 @@
           <a href="">Preview (not availiable yet)</a>
           <a href="https://github.com/KariminK/zstplusplus">Source code</a>
         </li>
-        <li>
+        <li data-aos="fade-right">
           <img src="./assets/zsttimetable.png" alt="zst timetable project" />
           <h3>ZST Timetable</h3>
           <p>
@@ -75,5 +83,9 @@
     </section>
     <canvas id="canvas"></canvas>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
