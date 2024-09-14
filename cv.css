@@ -13,7 +13,7 @@ body {
   margin: 15px auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 4fr 3fr;
+  grid-template-rows: 2fr 1fr;
   grid-template-areas: "main skills" "projects projects";
   background-color: #b1b1b1;
 }
@@ -130,7 +130,7 @@ article {
   }
   body {
     max-width: 100%;
-    grid-template-rows: 100vh 1fr;
+    grid-template-areas: "main skills" "project-start" "projects";
     margin: 0%;
   }
   .school-title {
@@ -139,7 +139,7 @@ article {
   #contact {
     display: block;
   }
-  #projects {
-    padding: 40px;
+  #projects-start {
+    grid-area: project-start;
   }
 }
