@@ -13,7 +13,7 @@ body {
   margin: 15px auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: #f0f0f0;
+  background-color: #b1b1b1;
 }
 main {
   background: white;
@@ -86,4 +86,18 @@ a {
 }
 .school-title p {
   color: #585858;
+}
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #contact {
+    display: block;
+  }
+  .school-title {
+    display: block;
+  }
 }
