@@ -25,6 +25,7 @@
     />
     <link rel="manifest" href="./favicon/site.webmanifest" />
     <link rel="stylesheet" href="cv.css" />
+    <link rel="stylesheet" href="print-cv.css" media="print" />
   </head>
   <body>
     <main>
@@ -43,14 +44,13 @@
       <section>
         <h2>About me</h2>
         <p>
-          I am 17 years old programmer from Poland. I haven't have any comercial
-          experience yet, but I have completed several personal projects and I
-          know many technologies. I am focusing on web development. I am
-          learning Javascript since 2018 so I know this language very well. I
-          like trying new things.
-          <br />From 2022 I am self-taught, and since then I learned React,
-          MongoDB, basics of Typescript and much more. That shows I am capable
-          of learning new technologies on my own.
+          I am a 17-year-old programmer from Poland specializing in web
+          technologies. I have been learning JavaScript the longest (since 2018)
+          and know this language very well. When writing code, I strive to use
+          good patterns and practices. I am a quick learner. Since 2022, I have
+          been self-taught, and during this time, I have learned many
+          technologies such as TypeScript, MongoDB, and MySQL. I also have the
+          ability to use Linux and am familiar with basic terminal commands.
         </p>
       </section>
       <hr />
@@ -72,21 +72,58 @@
       </section>
       <hr />
       <section>
-        <h2>Experience</h2>
-        <p>
-          In programming not yet, hopefully soon. On other side, I am delivering
-          food on Wolt App
-        </p>
-      </section>
-      <hr />
-      <section>
-        <h2>Portfolio</h2>
-        <p>
-          My main projects are described on my
-          <a href="https://karimink.github.io" target="_blank"
-            >portfolio website</a
-          >
-        </p>
+        <h2>Personal Projects</h2>
+        <ul>
+          <li>
+            <article>
+              <h3>ZST Timetable</h3>
+              <p>
+                The timetable page of my school is ugly, so I decided to make it
+                better. I wrote an API that fetches data from the school's
+                original website using an external library, aggregates it, and
+                sends it to the client. I also created a frontend that is much
+                more visually appealing and, most importantly, well-suited for
+                mobile devices
+              </p>
+              <a href="https://github.com/KariminK/zst-timetable">
+                Go to GitHub
+              </a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>ZSTPlusPlus</h3>
+              <p>
+                I wanted to organize the knowledge I was gaining in school and,
+                at the same time, help my classmates study for tests. So, I
+                created a platform in React with documentation for exams and
+                quizzes. The data is uploaded via a JSON file to avoid the need
+                for creating a backend. To make things easier, I built an editor
+                that generates JSON based on the data entered into the
+                appropriate text fields.
+              </p>
+              <a href="https://github.com/KariminK/zstplusplus">
+                Go to GitHub
+              </a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>$tuff</h3>
+              <p>
+                As I mentioned, I am self-taught and used The Odin Project
+                course. During the course, I built a store website that fetches
+                data from the Fake Store API and includes a cart mechanism
+                (i.e., the user can add and remove products from the cart).
+                While creating it, I learned how to use the React Router
+                library.
+              </p>
+              <a href="https://github.com/KariminK/shopping-cart">
+                Go to GitHub
+              </a>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
     <aside>

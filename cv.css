@@ -87,6 +87,9 @@ a {
 .school-title p {
   color: #585858;
 }
+article {
+  margin: 20px 0px;
+}
 @media screen and (max-width: 768px) {
   body {
     grid-template-columns: 1fr;
