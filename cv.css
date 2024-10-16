@@ -13,7 +13,7 @@ body {
   margin: 15px auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: "main skills" "projects projects";
   background-color: #b1b1b1;
 }
@@ -75,9 +75,11 @@ aside li ul {
 }
 #projects {
   grid-area: projects;
-  padding: 0px 20px;
+  padding: 10px 20px;
   background-color: white;
+  margin-top: 2rem;
 }
+
 #contact {
   display: flex;
   justify-content: space-between;

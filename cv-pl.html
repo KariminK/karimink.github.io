@@ -30,19 +30,19 @@
     <main>
       <h1>Kacper Błoszko</h1>
       <section id="contact">
-        <div>
+        <div class="contact-github">
           <h3>Github</h3>
           <a href="https://github.com/KariminK">KariminK</a>
         </div>
-        <div>
+        <div class="contact-email">
           <h3>Email</h3>
           <p>kbloszko@outlook.com</p>
         </div>
       </section>
       <hr />
-      <section>
-        <h2>O mnie</h2>
-        <p>
+      <section id="about-me">
+        <h2 class="section-heading">O mnie</h2>
+        <p class="section-description">
           Jestem 17-letnim programistą z Polski specjalizującym się w
           technologiach webowych. Najdłużej (bo od 2018 roku) uczę się
           JavaScriptu i znam ten język bardzo dobrze. Pisząc kod staram się
@@ -54,15 +54,15 @@
         </p>
       </section>
       <hr />
-      <section>
-        <h2>Edukacja</h2>
-        <ul>
-          <li>
+      <section id="education">
+        <h2 class="section-heading">Edukacja</h2>
+        <ul class="school-list">
+          <li class="school-list-item">
             <div class="school-title">
               <h3>Zespół Szkół Technicznych w Rzeszowie</h3>
               <p>Od 2022</p>
             </div>
-            <p>
+            <p class="school-description">
               Jestem na profilu technik programista, gdzie jesteśmy uczeni m.in:
               MFC, PHP, HTML, CSS, Javascript, Obiektowego C++, i wielu innych w
               przyszłości
@@ -71,76 +71,75 @@
         </ul>
       </section>
       <hr />
-      <section id="projects-start">
-        <h2>Moje projekty</h2>
-        <ul>
-          <li>
-            <article>
-              <h3>ZST Timetable</h3>
-              <p>
-                Napisałem API, które bierze dane z oryginalnej strony szkoły za
-                pomocą zewnętrznej biblioteki, agreguje je i przesyła do
-                klienta. Stworzyłem też frontend, który jest o wiele bardziej
-                przyjemny dla oka i przed wszystkim dobrze widoczny na
-                urządzeniach mobilnych.
-              </p>
-              <a href="https://github.com/KariminK/zst-timetable">
-                Repozyturium GitHub
-              </a>
-            </article>
-          </li>
-        </ul>
-      </section>
     </main>
     <section id="projects">
-      <ul>
-        <li>
-          <article>
-            <h3>ZSTPlusPlus</h3>
-            <p>
-              Chciałem jakoś uporządkować wiedzę zdobywaną na zajęciach w
-              szkole, a przy okazji pomóc trochę kolegom z klasy w uczeniu się
-              na testy. Więc zrobiłem w React platformę z dokumentacją do
-              sprawdzianów i kartkówek. Dane wrzucane są przez plik json, żeby
-              ominąć potrzebę tworzenia backendu. Chcąc ułatwić sobie życie,
-              zrobiłem edytor, który mi generował json na podstawie wpisanych w
-              odpowiednie pola tekstowe danych.
-            </p>
-            <a href="https://github.com/KariminK/zstplusplus">
-              Repozyturium GitHub
-            </a>
-          </article>
+      <h2 class="section-title">Moje projekty</h2>
+      <ul class="project-list">
+        <li class="project-list-item">
+          <h3 class="project-title">ZST Timetable</h3>
+          <p class="project-description">
+            Napisałem API, które bierze dane z oryginalnej strony szkoły za
+            pomocą zewnętrznej biblioteki, agreguje je i przesyła do klienta.
+            Stworzyłem też frontend, który jest o wiele bardziej przyjemny dla
+            oka i przed wszystkim dobrze widoczny na urządzeniach mobilnych.
+          </p>
+          <a
+            class="project-link"
+            href="https://github.com/KariminK/zst-timetable"
+          >
+            Repozyturium GitHub
+          </a>
         </li>
-        <li>
-          <article>
-            <h3>$tuff</h3>
-            <p>
-              Tak jak mówiłem, jestem samoukiem i korzystałem z kursu The Odin
-              Project. Podczas niego zbudowałem stronę sklepu, która bierze dane
-              z Fake Store API i ma mechanizm koszyka (tj. użytkownik może
-              dodawać i usuwać produkty do koszyka). W trakcie jego tworzenia
-              nauczyłem się korzystania z biblioteki React Router.
-            </p>
-            <a href="https://github.com/KariminK/shopping-cart">
-              Repozytorium Github
-            </a>
-          </article>
+        <li class="project-list-item">
+          <h3 class="project-title">ZSTPlusPlus</h3>
+          <p class="project-description">
+            Chciałem jakoś uporządkować wiedzę zdobywaną na zajęciach w szkole,
+            a przy okazji pomóc trochę kolegom z klasy w uczeniu się na testy.
+            Więc zrobiłem w React platformę z dokumentacją do sprawdzianów i
+            kartkówek. Dane wrzucane są przez plik json, żeby ominąć potrzebę
+            tworzenia backendu. Chcąc ułatwić sobie życie, zrobiłem edytor,
+            który mi generował json na podstawie wpisanych w odpowiednie pola
+            tekstowe danych.
+          </p>
+          <a
+            class="project-link"
+            href="https://github.com/KariminK/zstplusplus"
+          >
+            Repozyturium GitHub
+          </a>
         </li>
-        <li>
-          <article>
-            <h3>Impact.site</h3>
-            <p>
-              Projekt stworzony z moimi znajomymi na Hackyeah 2024. Jest to
-              platforma, która pozwala na współpracę firmom i organizacjom
-              pozarządowym (np. fundacjom). Firmy mogą znajdować fundacje na
-              stronie, a także dodawać ogłoszenie z dofinansowaniem na
-              poszczególny cel. Fundacje zaś mogą znajdować ogłoszenia
-              dopasowane pod jej cele.
-            </p>
-            <a href="https://github.com/blackshibe/hackyeah-2024">
-              Repozytorium Github
-            </a>
-          </article>
+        <li class="project-list-item">
+          <h3 class="project-title">$tuff</h3>
+          <p class="project-description">
+            Tak jak mówiłem, jestem samoukiem i korzystałem z kursu The Odin
+            Project. Podczas niego zbudowałem stronę sklepu, która bierze dane z
+            Fake Store API i ma mechanizm koszyka (tj. użytkownik może dodawać i
+            usuwać produkty do koszyka). W trakcie jego tworzenia nauczyłem się
+            korzystania z biblioteki React Router.
+          </p>
+          <a
+            class="project-link"
+            href="https://github.com/KariminK/shopping-cart"
+          >
+            Repozytorium Github
+          </a>
+        </li>
+        <li class="project-list-item">
+          <h3 class="project-title">Impact.site</h3>
+          <p class="project-description">
+            Projekt stworzony z moimi znajomymi na Hackyeah 2024. Jest to
+            platforma, która pozwala na współpracę firmom i organizacjom
+            pozarządowym (np. fundacjom). Firmy mogą znajdować fundacje na
+            stronie, a także dodawać ogłoszenie z dofinansowaniem na
+            poszczególny cel. Fundacje zaś mogą znajdować ogłoszenia dopasowane
+            pod jej cele.
+          </p>
+          <a
+            class="project-link"
+            href="https://github.com/blackshibe/hackyeah-2024"
+          >
+            Repozytorium Github
+          </a>
         </li>
       </ul>
     </section>
