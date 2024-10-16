@@ -27,20 +27,22 @@
     <link rel="stylesheet" href="cv.css" />
   </head>
   <body>
-    <main>
+    <header>
       <h1>Kacper Błoszko</h1>
-      <section id="contact">
-        <div class="contact-github">
+      <section id="contact-section">
+        <div class="contact">
           <h3>Github</h3>
           <a href="https://github.com/KariminK">KariminK</a>
         </div>
-        <div class="contact-email">
+        <div class="contact">
           <h3>Email</h3>
           <p>kbloszko@outlook.com</p>
         </div>
       </section>
+    </header>
+    <main>
       <hr />
-      <section id="about-me">
+      <section id="about-me-section">
         <h2 class="section-heading">O mnie</h2>
         <p class="section-description">
           Jestem 17-letnim programistą z Polski specjalizującym się w
@@ -54,7 +56,7 @@
         </p>
       </section>
       <hr />
-      <section id="education">
+      <section id="education-section">
         <h2 class="section-heading">Edukacja</h2>
         <ul class="school-list">
           <li class="school-list-item">
@@ -71,113 +73,112 @@
         </ul>
       </section>
       <hr />
-    </main>
-    <section id="projects">
-      <h2 class="section-title">Moje projekty</h2>
-      <ul class="project-list">
-        <li class="project-list-item">
-          <h3 class="project-title">ZST Timetable</h3>
-          <p class="project-description">
-            Napisałem API, które bierze dane z oryginalnej strony szkoły za
-            pomocą zewnętrznej biblioteki, agreguje je i przesyła do klienta.
-            Stworzyłem też frontend, który jest o wiele bardziej przyjemny dla
-            oka i przed wszystkim dobrze widoczny na urządzeniach mobilnych.
-          </p>
-          <a
-            class="project-link"
-            href="https://github.com/KariminK/zst-timetable"
-          >
-            Repozyturium GitHub
-          </a>
-        </li>
-        <li class="project-list-item">
-          <h3 class="project-title">ZSTPlusPlus</h3>
-          <p class="project-description">
-            Chciałem jakoś uporządkować wiedzę zdobywaną na zajęciach w szkole,
-            a przy okazji pomóc trochę kolegom z klasy w uczeniu się na testy.
-            Więc zrobiłem w React platformę z dokumentacją do sprawdzianów i
-            kartkówek. Dane wrzucane są przez plik json, żeby ominąć potrzebę
-            tworzenia backendu. Chcąc ułatwić sobie życie, zrobiłem edytor,
-            który mi generował json na podstawie wpisanych w odpowiednie pola
-            tekstowe danych.
-          </p>
-          <a
-            class="project-link"
-            href="https://github.com/KariminK/zstplusplus"
-          >
-            Repozyturium GitHub
-          </a>
-        </li>
-        <li class="project-list-item">
-          <h3 class="project-title">$tuff</h3>
-          <p class="project-description">
-            Tak jak mówiłem, jestem samoukiem i korzystałem z kursu The Odin
-            Project. Podczas niego zbudowałem stronę sklepu, która bierze dane z
-            Fake Store API i ma mechanizm koszyka (tj. użytkownik może dodawać i
-            usuwać produkty do koszyka). W trakcie jego tworzenia nauczyłem się
-            korzystania z biblioteki React Router.
-          </p>
-          <a
-            class="project-link"
-            href="https://github.com/KariminK/shopping-cart"
-          >
-            Repozytorium Github
-          </a>
-        </li>
-        <li class="project-list-item">
-          <h3 class="project-title">Impact.site</h3>
-          <p class="project-description">
-            Projekt stworzony z moimi znajomymi na Hackyeah 2024. Jest to
-            platforma, która pozwala na współpracę firmom i organizacjom
-            pozarządowym (np. fundacjom). Firmy mogą znajdować fundacje na
-            stronie, a także dodawać ogłoszenie z dofinansowaniem na
-            poszczególny cel. Fundacje zaś mogą znajdować ogłoszenia dopasowane
-            pod jej cele.
-          </p>
-          <a
-            class="project-link"
-            href="https://github.com/blackshibe/hackyeah-2024"
-          >
-            Repozytorium Github
-          </a>
-        </li>
-      </ul>
-    </section>
-    <aside>
-      <section>
-        <h2>Wiedza</h2>
-        <ul>
-          <li>
-            <b>Języki programowania:</b>
+      <section id="projects-section">
+        <h2 class="section-heading">Moje projekty</h2>
+        <ul class="project-list">
+          <li class="project-list-item">
+            <h3 class="project-heading">ZST Timetable</h3>
+            <p class="project-description">
+              Napisałem API, które bierze dane z oryginalnej strony szkoły za
+              pomocą zewnętrznej biblioteki, agreguje je i przesyła do klienta.
+              Stworzyłem też frontend, który jest o wiele bardziej przyjemny dla
+              oka i przed wszystkim dobrze widoczny na urządzeniach mobilnych.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/KariminK/zst-timetable"
+            >
+              Repozyturium GitHub
+            </a>
+          </li>
+          <li class="project-list-item">
+            <h3 class="project-heading">ZSTPlusPlus</h3>
+            <p class="project-description">
+              Chciałem jakoś uporządkować wiedzę zdobywaną na zajęciach w
+              szkole, a przy okazji pomóc trochę kolegom z klasy w uczeniu się
+              na testy. Więc zrobiłem w React platformę z dokumentacją do
+              sprawdzianów i kartkówek. Dane wrzucane są przez plik json, żeby
+              ominąć potrzebę tworzenia backendu. Chcąc ułatwić sobie życie,
+              zrobiłem edytor, który mi generował json na podstawie wpisanych w
+              odpowiednie pola tekstowe danych.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/KariminK/zstplusplus"
+            >
+              Repozyturium GitHub
+            </a>
+          </li>
+          <li class="project-list-item">
+            <h3 class="project-heading">$tuff</h3>
+            <p class="project-description">
+              Tak jak mówiłem, jestem samoukiem i korzystałem z kursu The Odin
+              Project. Podczas niego zbudowałem stronę sklepu, która bierze dane
+              z Fake Store API i ma mechanizm koszyka (tj. użytkownik może
+              dodawać i usuwać produkty do koszyka). W trakcie jego tworzenia
+              nauczyłem się korzystania z biblioteki React Router.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/KariminK/shopping-cart"
+            >
+              Repozytorium Github
+            </a>
+          </li>
+          <li class="project-list-item">
+            <h3 class="project-heading">Impact.site</h3>
+            <p class="project-description">
+              Projekt stworzony z moimi znajomymi na Hackyeah 2024. Jest to
+              platforma, która pozwala na współpracę firmom i organizacjom
+              pozarządowym (np. fundacjom). Firmy mogą znajdować fundacje na
+              stronie, a także dodawać ogłoszenie z dofinansowaniem na
+              poszczególny cel. Fundacje zaś mogą znajdować ogłoszenia
+              dopasowane pod jej cele.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/blackshibe/hackyeah-2024"
+            >
+              Repozytorium Github
+            </a>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section id="knowledge-section">
+        <h2 class="section-heading">Wiedza</h2>
+        <ul id="knowledge-list">
+          <li class="knowledge-category">
+            <b class="knowledge-category-title">Języki programowania:</b>
             <ul>
               <li>JavaScript</li>
               <li>TypeScript</li>
             </ul>
           </li>
-          <li>
-            <b>Frameworki:</b>
+          <li class="knowledge-category">
+            <b class="knowledge-category-title">Frameworki:</b>
             <ul>
               <li>React</li>
               <li>NodeJS</li>
               <li>ExpressJS</li>
             </ul>
           </li>
-          <li>
-            <b>SZBD:</b>
+          <li class="knowledge-category">
+            <b class="knowledge-category-title">SZBD:</b>
             <ul>
               <li>MySQL</li>
               <li>MongoDB</li>
             </ul>
           </li>
-          <li>
-            <b>Biblioteki do testów:</b>
+          <li class="knowledge-category">
+            <b class="knowledge-category-title">Biblioteki do testów:</b>
             <ul>
               <li>jest</li>
               <li>vitest + react-testing-library</li>
             </ul>
           </li>
-          <li>
-            <b>Inne:</b>
+          <li class="knowledge-category">
+            <b class="knowledge-category-title">Inne:</b>
             <ul>
               <li>Git + Github</li>
               <li>Podstawowa wiedza o linuksie</li>
@@ -185,6 +186,6 @@
           </li>
         </ul>
       </section>
-    </aside>
+    </main>
   </body>
 </html>
