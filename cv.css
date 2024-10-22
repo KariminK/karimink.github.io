@@ -138,3 +138,31 @@ header h1 {
   justify-content: space-around;
   gap: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+  .knowledge-category,
+  .knowledge-category ul {
+    display: block;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    padding: 1rem;
+  }
+  header {
+    padding: 0rem;
+  }
+  #contact-section {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .contact h3 {
+    font-size: 1.5rem;
+  }
+
+  .school-title {
+    display: block;
+  }
+}
