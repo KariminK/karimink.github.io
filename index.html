@@ -25,106 +25,55 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <section id="landing">
+      <h1>Karimin</h1>
       <p>
-        Want to be fullstack developer <br />
-        &amp; freelancer
+        Hello! I am High school student interested in frontend, backend, web
+        design and more.
       </p>
-      <h2>Karimin</h2>
-    </header>
-    <main>
-      <h1>karimin</h1>
-      <p id="first-title-caption">
-        Hello world, I&apos;m Karimin - a self-taught fullstack developer and
-        also high school student on programmer profile.
-        <span id="second-title-caption"
-          >I really like learning new things. Currently I am learning typescript
-          and expanding my ExpressJS knowledge</span
-        >
-      </p>
-    </main>
-    <section id="links">
-      <a
-        data-aos="fade-down"
-        class="link"
-        href="https://www.github.com/KariminK"
-        >Github</a
-      >
-      <a data-aos="fade-down" data-aos-delay="250" class="link discord">
-        Discord
-      </a>
-      <a data-aos="fade-down" data-aos-delay="500" class="link mail">Mail</a>
-    </section>
-    <section id="projects">
-      <h2 data-aos="fade-right">Featured Projects</h2>
       <ul>
-        <li data-aos="fade-right">
-          <img src="./assets/stuff.png" alt="stuff project" />
-          <h3>$tuff eShop</h3>
-          <p>
-            Project made durning The Odin Project. It fetches data from
-            fakestoreapi and allows user to add and remove products to cart.
-            Users can also view product details and filter items by price and
-            choose category
-          </p>
-          <a href="https://karimink.github.io/shopping-cart/">Preview</a>
-          <a href="https://github.com/KariminK/shopping-cart">Source code</a>
+        <li>
+          <a href="">/projects</a>
         </li>
-        <li data-aos="fade-right">
-          <img src="./assets/zstplusplus.png" alt="zstplusplus project" />
-          <h3>ZSTPlusPlus</h3>
-          <p>
-            Main idea was to make platform where i could add notes to tests to
-            my school. I had in my mind that I must keep it simple so I made
-            editor which generates json from passed data to form and I paste
-            this json manually to repo files
-          </p>
-          <a href="https://karimink.github.io/zstplusplus/">Website</a>
-          <a href="https://github.com/KariminK/zstplusplus">Source code</a>
+        <li>
+          <a href="">/about</a>
         </li>
-        <!-- <li data-aos="fade-right">
-          <img src="./assets/zsttimetable.png" alt="zst timetable project" />
-          <h3>ZST Timetable</h3>
-          <p>
-            I wasn't happy with my school's timetable website so I made a new
-            one. I used web scraper to get data from original site. Frontend
-            working code is avaliable on &quot;old&quot; branch on github
-          </p>
-          <a href="https://github.com/KariminK/zst-timetable">
-            Source code (frontend)
-          </a>
-          <a href="https://github.com/KariminK/zst-timetable-data-parser">
-            Source code (backend)
-          </a>
-        </li> -->
-        <li data-aos="fade-right">
-          <img src="./assets/impact.png" alt="impact project" />
-          <h3>Impact.site</h3>
-          <p>
-            Project made with my friends for Hackyeah 2024. Impact.site is a
-            platform that brings NGOs and businesses together to collaborate on
-            projects that create positive social change.
-          </p>
-          <a href="http://ec2-18-234-78-12.compute-1.amazonaws.com">Preview</a>
-          <a href="https://github.com/blackshibe/hackyeah-2024">Source code</a>
-        </li>
-        <li data-aos="fade-right">
-          <img src="./assets/reach.png" alt="reach project" />
-          <h3>Reach</h3>
-          <p>
-            Another project made for The Odin Project. Reach is minimialistic
-            file-management platform. It allows users to make accounts, perform
-            CRUD on folders and upload, view and delete files.
-          </p>
-          <a href="https://github.com/KariminK/file-uploader">Source code</a>
+        <li>
+          <a href="">/contact</a>
         </li>
       </ul>
+      <div id="currently-at">
+        <p>Currently at</p>
+        <div id="activity-caption">
+          <div id="activity-image">
+            <img src="./favicon/android-chrome-192x192.png" alt="" />
+          </div>
+          <div id="activity-description">
+            <p><b>Visual Studio Code</b></p>
+            <p>Editing index.html</p>
+            <p>Workspace: karimink.github.io</p>
+            <p id="activity-timespan">1:54:54</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <canvas id="canvas"></canvas>
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <h2>My projects</h2>
+    <section id="projects">
+      <article>
+        <img src="assets/reach.png" alt="Reach project" />
+      </article>
+      <article>
+        <img src="assets/zstplusplus.png" alt="zstplusplus project" />
+      </article>
+      <article>
+        <img src="assets/stuff.png" alt="stuff project" />
+      </article>
+      <article>
+        <img src="assets/zsttimetable.png" alt="stuff project" />
+      </article>
+      <article>
+        <img src="assets/impact.png" alt="stuff project" />
+      </article>
+    </section>
   </body>
 </html>
