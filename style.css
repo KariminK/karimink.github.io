@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cascadia Code", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 body {
   background-color: var(--background-1);
@@ -61,20 +61,19 @@ a {
 }
 
 #currently-at {
-  margin-top: 4rem;
+  margin-top: 2rem;
   background-color: var(--background-2);
-  padding: 1.25rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid var(--foreground-2);
-  box-shadow: 0px 0px 5px var(--shadow-1);
+  border-radius: 1rem;
+  width: fit-content;
 }
 #currently-at > p {
-  margin: 0.25rem 0px;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 #activity-caption p {
-  margin: 1rem 0px;
   font-size: 1rem;
+  line-height: 2em;
   /* font-family: "Inter", sans-serif; */
   font-weight: 300;
 }
@@ -84,18 +83,20 @@ a {
 
 #activity-caption {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
 }
 
 #activity-image {
-  width: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #activity-image img {
-  width: 100%;
+  width: 140px;
+  border-radius: 1rem;
 }
 
 #activity-timespan {
@@ -106,6 +107,23 @@ a {
 #projects {
   display: flex;
   flex-wrap: wrap;
+}
+#currently-at > button {
+  width: 100%;
+  background-color: var(--accent-1);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#currently-at > button > img {
+  width: 1.5rem;
 }
 
 article {
