@@ -25,57 +25,34 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <section id="landing">
-      <h1>Karimin</h1>
-      <p>
-        Hello! I am High school student interested in frontend, backend, web
-        design and more.
-      </p>
-      <ul>
-        <li>
-          <a href="">/projects</a>
-        </li>
-        <li>
-          <a href="">/about</a>
-        </li>
-        <li>
-          <a href="">/contact</a>
-        </li>
-      </ul>
-      <div id="currently-at">
-        <div id="activity-caption">
-          <div id="activity-image">
-            <img src="./favicon/android-chrome-192x192.png" alt="" />
-          </div>
-          <div id="activity-description">
-            <p><b>Visual Studio Code</b></p>
-            <p>Editing index.html</p>
-            <p>Workspace: karimink.github.io</p>
-            <p id="activity-timespan">1:54:54</p>
-          </div>
+    <div id="background"></div>
+    <div id="cursor-circle"></div>
+    <div id="cursor-dot"></div>
+
+    <section id="landing-wrapper">
+      <div id="landing">
+        <div id="landing-heading">
+          <h1>Karimin</h1>
         </div>
-        <button>
-          <img src="assets/discord-icon.svg" alt="discord" />
-        </button>
+        <p id="temp_warning">This site is work in progress</p>
+        <p id="landing-description">
+          Hello! I am High school student interested in frontend, backend, web
+          design and more.
+        </p>
+
+        <ul id="landing-menu">
+          <li>
+            <a href="">/projects</a>
+          </li>
+          <li>
+            <a href="">/about</a>
+          </li>
+          <li>
+            <a href="">/contact</a>
+          </li>
+        </ul>
       </div>
     </section>
-    <h2>My projects</h2>
-    <section id="projects">
-      <article>
-        <img src="assets/reach.png" alt="Reach project" />
-      </article>
-      <article>
-        <img src="assets/zstplusplus.png" alt="zstplusplus project" />
-      </article>
-      <article>
-        <img src="assets/stuff.png" alt="stuff project" />
-      </article>
-      <article>
-        <img src="assets/zsttimetable.png" alt="stuff project" />
-      </article>
-      <article>
-        <img src="assets/impact.png" alt="stuff project" />
-      </article>
-    </section>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-  --background-1: #18181b;
+  --background-1: #0d0d0f;
   --background-2: #27272a;
 
   --shadow-1: #09090b;
 
-  --foreground-1: #e2e8f0;
+  --foreground-1: #b3c3d8;
   --foreground-2: #90a1b9;
   --accent-1: #7c86ff;
 }
@@ -14,123 +14,113 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
+  color: var(--foreground-1);
+  cursor: none;
 }
+
 body {
   background-color: var(--background-1);
-  color: var(--foreground-1);
-}
-body > h2 {
-  text-align: center;
-  line-height: 3em;
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--foreground-2);
 }
 
-#landing {
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  filter: brightness(30%);
+  background-image: url("./assets/background.jpeg");
+  background-size: cover;
+  z-index: -1;
+}
+
+#cursor-circle {
+  width: 150px;
+  height: 150px;
+
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-  max-width: fit-content;
-  margin-inline: auto;
+  align-items: center;
+
+  position: fixed;
+  z-index: 4;
+
+  border-radius: 100%;
+  backdrop-filter: brightness(500%);
+  pointer-events: none;
+
+  transition: top 100ms, left 100ms;
 }
 
-h1 {
-  font-size: 3rem;
+#cursor-dot {
+  width: 6px;
+  height: 6px;
+  position: fixed;
+  border-radius: 100%;
+  background-color: white;
+  pointer-events: none;
+}
+
+h2 {
+  padding: 2em;
+  text-align: center;
+  font-family: "Cascadia Code";
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: var(--background-1);
+}
+
+#landing-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#landing-heading {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+#temp_warning {
+  letter-spacing: 0px;
+  font-size: 0.75rem;
+  color: orangered;
+}
+
+#landing-heading > h1 {
+  font-size: 3.5rem;
+  font-family: "Cascadia Code";
   font-weight: normal;
 }
-#landing > p {
-  font-family: "Inter", sans-serif;
-  font-size: 1.25rem;
-  line-height: 4em;
-  font-weight: 200;
+#landing-heading > img {
+  width: 3.5rem;
+  border-radius: 100%;
 }
-ul {
-  display: flex;
+
+#landing-description {
+  margin: 1.5em 0px;
+  font-weight: light;
+}
+
+#landing-menu {
   list-style-type: none;
+  display: flex;
   gap: 2rem;
   font-size: 1.5rem;
-  letter-spacing: 2px;
 }
-a {
-  color: var(--foreground-2);
-  font-weight: 400;
+#landing-menu a {
   text-decoration: none;
+  font-family: "Cascadia Code";
 }
 
-#currently-at {
-  margin-top: 2rem;
-  background-color: var(--background-2);
-  border-radius: 1rem;
-  width: fit-content;
-}
-#currently-at > p {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+/* About me section */
+#about {
+  background-color: var(--background-1);
 }
 
-#activity-caption p {
-  font-size: 1rem;
-  line-height: 2em;
-  /* font-family: "Inter", sans-serif; */
-  font-weight: 300;
-}
-#currently-at b {
-  font-size: 1.25rem;
-}
-
-#activity-caption {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 1.5rem;
-}
-
-#activity-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#activity-image img {
-  width: 140px;
-  border-radius: 1rem;
-}
-
-#activity-timespan {
-  color: var(--accent-1);
-  font-weight: bold;
-}
-
-#projects {
-  display: flex;
-  flex-wrap: wrap;
-}
-#currently-at > button {
+#projects img {
   width: 100%;
-  background-color: var(--accent-1);
-  border: none;
-  color: white;
-  font-size: 1rem;
-  padding: 1rem;
-  cursor: pointer;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#currently-at > button > img {
-  width: 1.5rem;
-}
-
-article {
-  padding: 1rem;
-  width: 50%;
-}
-article img {
-  max-width: 100%;
-  border-radius: 2rem;
 }
