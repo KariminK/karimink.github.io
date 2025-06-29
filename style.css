@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-  --background-1: #0d0d0f;
+  --background-1: #0d0d0f93;
   --background-2: #27272a;
 
   --shadow-1: #09090b;
@@ -8,6 +8,8 @@
   --foreground-1: #b3c3d8;
   --foreground-2: #90a1b9;
   --accent-1: #7c86ff;
+
+  --accent-2: #81d83a;
 }
 
 * {
@@ -19,8 +21,12 @@
   cursor: none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  background-color: var(--background-1);
+  background-color: transparent;
 }
 
 #background {
@@ -61,6 +67,7 @@ body {
   border-radius: 100%;
   background-color: white;
   pointer-events: none;
+  z-index: 4;
 }
 
 h2 {
@@ -69,7 +76,6 @@ h2 {
   font-family: "Cascadia Code";
   font-weight: normal;
   font-size: 2rem;
-  background-color: var(--background-1);
 }
 
 #landing-wrapper {
@@ -116,11 +122,60 @@ h2 {
   font-family: "Cascadia Code";
 }
 
-/* About me section */
-#about {
-  background-color: var(--background-1);
-}
+/* projects section */
 
 #projects img {
   width: 100%;
+}
+
+#projects ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.project {
+  background-color: var(--background-1);
+  backdrop-filter: blur(10px);
+}
+
+.project:hover {
+  background-color: var(--foreground-1);
+}
+
+.project:hover .project-description h3,
+.project:hover .project-description p {
+  color: var(--background-2);
+}
+
+.project:hover .project-btn {
+  background-color: var(--accent-2);
+  color: var(--background-2);
+}
+
+.project-description {
+  margin: 2rem;
+}
+
+.project-description h3 {
+  font-family: "Cascadia Code";
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-description p {
+  line-height: 1.5em;
+  font-size: 1.25em;
+  margin-bottom: 2rem;
+}
+
+.project-btn {
+  background-color: transparent;
+  color: var(--accent-2);
+  font-family: "Cascadia Code";
+  padding: 1em;
+  font-size: 1.25rem;
+  border: 1px solid var(--accent-2);
 }
