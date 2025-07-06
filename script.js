@@ -1,6 +1,8 @@
 const cursorCircle = document.querySelector("#cursor-circle");
 const cursorDot = document.querySelector("#cursor-dot");
 
+const projects = document.querySelectorAll(".project");
+
 const links = document.querySelectorAll("a");
 
 let MOUSE_X = 0;
@@ -40,3 +42,12 @@ function animateCursor() {
   requestAnimationFrame(animateCursor);
 }
 animateCursor();
+
+projects.forEach((project) => {
+  project.addEventListener("mouseenter", () => {
+    cursorCircle.style.backdropFilter = "none";
+  });
+  project.addEventListener("mouseleave", () => {
+    cursorCircle.style.backdropFilter = "brightness(500%)";
+  });
+});
