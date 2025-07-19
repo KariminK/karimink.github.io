@@ -179,3 +179,20 @@ h2 {
   font-size: 1.25rem;
   border: 1px solid var(--accent-2);
 }
+
+@media screen and (max-width: 500px) {
+  #landing-wrapper {
+    padding-inline: 1rem;
+  }
+
+  #landing-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projects ul {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem;
+  }
+}
