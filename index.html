@@ -25,104 +25,70 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <section id="landing-wrapper">
-      <div id="landing">
-        <div id="landing-heading">
-          <h1>Karimin</h1>
-        </div>
-        <p id="temp_warning">This site is work in progress</p>
-        <p id="landing-description">
-          Hello! I am High school student interested in frontend, backend, web
-          design and more.
+    <main>
+      <aside>
+        <h1>Karimin</h1>
+        <p>Full Stack Developer</p>
+        <p class="aside-about">
+          I try to become a fullstack developer. I stay up to date with newest
+          technologies and I use them in my projects.
         </p>
-
-        <ul id="landing-menu">
+        <ul class="aside-nav">
           <li>
-            <a href="#projects">/projects</a>
+            <a href="">Experience</a>
           </li>
-          <li>
-            <a href="">/about</a>
-          </li>
-          <li>
-            <a href="">/contact</a>
+          <li class="active">
+            <a href="">Projects</a>
           </li>
         </ul>
-      </div>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li class="project">
-          <div class="project-img">
-            <img src="./assets/impact.png" alt="impact" />
-          </div>
-          <div class="project-description">
-            <h3>Impact site</h3>
-            <p>
-              A Hackyeah 2024 project built with friends — a platform that
-              connects companies with NGOs by enabling funding announcements and
-              matching them with foundations' goals.
-            </p>
-            <a href="">
-              <button class="project-btn">Read More</button>
-            </a>
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-img">
-            <img src="./assets/stuff.png" alt="Stuff" />
-          </div>
-          <div class="project-description">
-            <h3>Stuff eshop</h3>
-            <p>
-              As a self-taught developer durning The Odin Project curriculum, I
-              built a store site with data from the Fake Store API, featuring a
-              cart system and React Router for navigation.
-            </p>
-            <a href="">
-              <button class="project-btn">Read More</button>
-            </a>
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-img">
-            <img src="./assets/reach.png" alt="reach" />
-          </div>
-          <div class="project-description">
-            <h3>Reach file uploader</h3>
-            <p>
-              Reach is minimialistic file-management platform. It allows users
-              to make accounts, perform CRUD on folders, Upload, view and delete
-              files. Files are stored in Cloudinary, while other info is stored
-              in postgresql database.
-            </p>
-            <a href="">
-              <button class="project-btn">Read More</button>
-            </a>
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-img">
-            <img src="./assets/zstplusplus.png" alt="ZSTPlusPlus" />
-          </div>
-          <div class="project-description">
-            <h3>ZSTPlusPlus notes</h3>
-            <p>
-              I built a React-based platform to organize school material and
-              help classmates study for exams. It uses JSON uploads to avoid a
-              backend, and includes a custom editor that generates JSON from
-              user input via text fields.
-            </p>
-            <a href="">
-              <button class="project-btn">Read More</button>
-            </a>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <footer>
-      <p>2025 - Till I get bored</p>
-    </footer>
+        <section id="social-media">
+          <img src="./assets/discord-icon.svg" alt="discord icon" />
+        </section>
+      </aside>
+      <!-- <section>
+        <ul>
+          <li class="project">
+            <img
+              class="project-image"
+              src="./assets/impact.png"
+              alt="Impact site image" />
+            <div class="project-description">
+              <p>
+                A platform that connects companies with NGOs by enabling funding
+                announcements and matching them with foundations' goals.
+              </p>
+              <ul class="badge-list">
+                <li class="badge">Javascript</li>
+                <li class="badge">NodeJS</li>
+                <li class="badge">React</li>
+                <li class="badge">SQLite</li>
+              </ul>
+            </div>
+          </li>
+          <li class="project">
+            <img
+              class="project-image"
+              src="./assets/reach.png"
+              alt="Reach project image" />
+            <div class="project-description">
+              <p>
+                Reach is minimialistic file-management platform. It allows users
+                to make accounts, perform CRUD on folders, Upload, view and
+                delete files
+              </p>
+              <ul class="badge-list">
+                <li class="badge">Typescript</li>
+                <li class="badge">NodeJS</li>
+                <li class="badge">ExpressJS</li>
+                <li class="badge">EJS</li>
+                <li class="badge">Cloudinary</li>
+                <li class="badge">Postgresql</li>
+                <li class="badge">Prisma ORM</li>
+              </ul>
+            </div>
+          </li>
+      </section> -->
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
