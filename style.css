@@ -77,7 +77,7 @@ aside {
   margin-top: 16px;
   width: 0px;
   height: 1px;
-  background-color: #fe9a00;
+  background-color: var(--badge-foreground);
   transition: width 300ms;
 }
 
@@ -103,4 +103,47 @@ aside {
 
 #social-media img {
   width: 30px;
+}
+
+.project {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.project-image {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.project-image img {
+  width: 225px;
+}
+
+.badge-list {
+  display: flex;
+  gap: 0.5rem;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.project-description p {
+  line-height: 1.33;
+  color: var(--text-secondary);
+}
+
+.badge {
+  background-color: var(--badge-background);
+  color: var(--badge-foreground);
+  padding: 5px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.project-description h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
