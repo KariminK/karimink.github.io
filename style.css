@@ -189,3 +189,20 @@ aside {
 #more-projects-link:hover {
   color: var(--badge-foreground);
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .project {
+    display: block;
+  }
+  .project-image {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .project-image img {
+    width: 100%;
+  }
+}
