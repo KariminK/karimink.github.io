@@ -114,10 +114,19 @@ aside {
 #social-media {
   margin-top: auto;
   justify-self: flex-end;
+  display: flex;
+  gap: 16px;
 }
 
-#social-media img {
+#social-media svg {
+  fill: var(--text-secondary);
+  transition: fill 200ms;
+  cursor: pointer;
   width: 30px;
+  height: 30px;
+}
+#social-media svg:hover {
+  fill: var(--text-primary);
 }
 
 .project {
