@@ -17,15 +17,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   background-color: var(--background);
   color: var(--text-primary);
-  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding: 16px;
   padding-top: 10rem;
   width: 100vw;
   height: 100vh;
@@ -48,6 +49,14 @@ main {
   gap: 100px;
   max-width: 1024px;
   height: 600px;
+}
+
+main > section {
+  display: none;
+}
+
+main > section.active {
+  display: block;
 }
 
 h1 {
@@ -80,14 +89,19 @@ aside {
 .aside-nav li {
   padding: 2rem;
 }
-.aside-nav a {
+.aside-nav button {
   color: var(--text-secondary);
   text-decoration: none;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: transparent;
+  border: none;
 }
-.aside-nav a::after {
+.aside-nav button::after {
   content: "";
   margin-top: 16px;
   width: 0px;
@@ -96,18 +110,18 @@ aside {
   transition: width 300ms;
 }
 
-.aside-nav li:hover a {
+.aside-nav li:hover button {
   color: var(--text-primary);
 }
 
-.aside-nav li:hover a::after {
-  width: 60%;
+.aside-nav li:hover button::after {
+  width: 40%;
 }
-.active a::after {
+.active button::after {
   width: 10%;
 }
 
-.active a {
+.active button {
   color: var(--text-primary);
 }
 
@@ -169,8 +183,9 @@ aside {
   margin-top: 20px;
 }
 
-.project-description p {
-  line-height: 1.5;
+.project-description p,
+.job-description p {
+  line-height: 1.6;
   color: var(--text-secondary);
   font-size: 14px;
 }
@@ -184,7 +199,8 @@ aside {
   font-weight: 500;
 }
 
-.project-description h2 {
+.project-description h2,
+.job-description h2 {
   margin-bottom: 12px;
   font-size: 18px;
   font-weight: 500;
@@ -197,6 +213,21 @@ aside {
 }
 #more-projects-link:hover {
   color: var(--badge-foreground);
+}
+
+#job-list {
+  list-style-type: none;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 16px;
+}
+
+.job-duration {
+  color: var(--text-secondary);
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 768px) {
@@ -213,5 +244,8 @@ aside {
   }
   .project-image img {
     width: 100%;
+  }
+  #social-media {
+    margin-top: 64px;
   }
 }
