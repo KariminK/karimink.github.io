@@ -132,6 +132,16 @@ aside {
   gap: 16px;
 }
 
+#social-media button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
 #social-media svg {
   fill: var(--text-secondary);
   transition: fill 200ms;
@@ -141,6 +151,14 @@ aside {
 }
 #social-media svg:hover {
   fill: var(--text-primary);
+}
+
+#projects > ul {
+  max-height: 550px;
+  overflow-y: scroll;
+  scrollbar-color: var(--badge-background) transparent;
+  scrollbar-width: thin;
+  margin-bottom: 24px;
 }
 
 .project {

@@ -29,3 +29,18 @@ experienceNavigation.addEventListener("click", () => {
   projectsSection.classList.remove("active");
   projectsNavigation.classList.remove("active");
 });
+
+const discordButton = document.querySelector("#discord-button");
+const discordSVG = document.querySelector("#discord-button svg");
+const discordText = document.querySelector("#discord-button p");
+
+discordButton.addEventListener("click", () => {
+  if (!discordSVG.style.display.includes("none")) {
+    discordSVG.style.display = "none";
+    discordText.style.display = "block";
+  } else {
+    console.log("x");
+    discordSVG.style.display = "inline";
+    discordText.style.display = "none";
+  }
+});
