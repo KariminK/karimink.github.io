@@ -247,6 +247,9 @@ aside {
   color: var(--text-secondary);
   letter-spacing: 1px;
 }
+.footer-text {
+  color: var(--text-secondary);
+}
 
 @media screen and (max-width: 768px) {
   main {
